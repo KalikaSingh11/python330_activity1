@@ -1,0 +1,30 @@
+<html>
+    <head>
+       <!--link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='base_styles.css')}}"--> 
+    </head>
+    <body>
+        <div class="incomplete_section"></div>
+            {% extends 'base.jinja2' %}
+
+            {% block subtitle %}Incomplete Tasks{% endblock subtitle %}
+
+            {% block content %}
+            <ul>
+                {% for task in tasks %}
+                <li>
+                {{ task.name }}:
+                <form method="POST">
+                    <input type="hidden" name="task_id" value="{{ task.id }}" style = "font-size:30px; 
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    
+                    <input type="submit" value="Mark done" style = "font-size:15px; 
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                </form>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endblock content %}
+        </div>
+    </body>
+
+</html>

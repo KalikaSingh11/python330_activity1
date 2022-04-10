@@ -1,0 +1,21 @@
+
+<html>
+    <!--link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='base_styles.css')}}"-->
+    <body> 
+        {% extends 'base.jinja2' %}
+
+        {% block subtitle %}Login{% endblock subtitle %}
+
+        {% block content %}
+
+        <div class = "login_section">
+            <form action="" method="POST">
+                {% if error %}<p>{{ error }}</p>{% endif %}
+                <label for="name-input" style = "font-size:15px">Username:</label><input id="name-input" type="text" name="name"style = "font-size:15pxpx"><br>
+                <label for="password-input" style = "font-size:15pxem" >Password:</label><input id="password-input" type="password" name="password" style = "font-size:15px"><br>
+                <input type="submit" value="Login" style = "font-size:15px">
+            </form>
+        <div>
+        {% endblock content %}
+    </body>
+</html>

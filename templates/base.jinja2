@@ -1,0 +1,21 @@
+<html>
+<head>
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='base_styles.css')}}">
+    <title>My Todo List</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a id="login" href ="{{url_for('login')}}">Login</a>
+        <a id="create" href ="{{url_for('create')}}">Create a task</a>
+        <a id="incomplete" href ="{{url_for('incomplete_tasks')}}">View incomplete tasks</a>
+        <a id="all" href ="{{url_for('all_tasks')}}">View all tasks</a>    
+    </div>
+    
+    <div class="base_section">
+        <h1>My Todo List</h1>
+        <h2>{% block subtitle %} {% endblock subtitle %}</h2>
+        {% block content %} {% endblock content %}
+    </div>
+</body>
+</html>

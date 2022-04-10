@@ -1,14 +1,6 @@
 """ Holds all of the routes and logic for those routes for the webapp
     Note to self: run python setup.py first BEFORE running main.py!! 
-    
-    For the CSS portion: since I am still learning CSS I found that the following
-    sites were very handy:
-        - https://www.w3schools.com/css/default.asp (Basics of CSS coding)
-        - https://university.webflow.com/courses/webflow-101-crash-course (During that week in between the last course 
-            and this one, I was learning Webflow (specifically this tutorial, which I am still working on!).
-            This tutorial is where I started learning about what elements are called what, and how they relate to other
-            elements on the page.
-            """
+    """
 from datetime import datetime
 import os
 from flask import Flask, render_template, request, redirect, url_for, session

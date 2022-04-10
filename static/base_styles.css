@@ -2,7 +2,7 @@ body{
     background-color: #ededed;
 }
 
-/* Add a black background color to the top navigation */
+/* Background color, shadow, width */
 .topnav {
     background-color:#F58F7C;
     overflow: hidden;
@@ -10,7 +10,7 @@ body{
     width: 100%;
   }
   
-  /* Style the links inside the navigation bar */
+  /* Style the link's font color, type, padding, etc.*/
   .topnav a {
     float: left;
     color: #2c2b30;
@@ -22,7 +22,7 @@ body{
 
   }
   
-  /* Change the color of links on hover */
+  /* Hover color */
   .topnav a:hover {
     background-color: #fbeded;
     color: #2c2b30;
